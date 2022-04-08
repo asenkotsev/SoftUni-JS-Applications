@@ -1,0 +1,17 @@
+{{>navbar}}
+{{#if email}}
+{{>guest}}
+<h1 class="text-center">Movies</h1>
+<section>
+    <a href="#/create" class="btn btn-warning ">Add Movie</a>
+    <form class="search float-right">
+        <label>Search: </label>
+        <input type="text">
+        <input type="submit" class="btn btn-info" value="Search">
+    </form>
+</section>
+{{>catalog}}
+{{else}}
+{{>guest}}
+{{/if}}
+{{>footer}}
